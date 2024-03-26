@@ -5,7 +5,7 @@ class fake_news_model:
         self.title = title
         self.text = text
 
-    def isFake(self) -> bool:
+    def isFakeNaiveBias(self) -> bool:
         model = joblib.load("model/fake_news_classification.pkl")
         prediction = model.predict([self.title + self.text])
         print(prediction)

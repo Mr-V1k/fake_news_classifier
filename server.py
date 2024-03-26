@@ -17,8 +17,8 @@ def fake_news():
 def new():
     title = request.form['title']
     text = request.form['text']
-    fake_news = fake_news_model(title,text);
-    fake = str(fake_news.isFake())
+    fake_news = fake_news_model(title,text)
+    fake = str(fake_news.isFakeNaiveBias())
     return render_template('fake_news.html', fake=fake)
 
 if __name__ == '__main__':

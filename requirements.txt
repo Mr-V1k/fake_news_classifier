@@ -1,0 +1,4 @@
+flask
+joblib
+sciket-learn
+seaborn
